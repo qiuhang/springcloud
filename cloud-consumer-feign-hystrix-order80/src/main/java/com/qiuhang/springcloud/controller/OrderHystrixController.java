@@ -24,7 +24,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @Slf4j
-@DefaultProperties(defaultFallback = "")
+//@DefaultProperties(defaultFallback = "paymentInfo_timeOutHandle")
 public class OrderHystrixController {
 
     @Autowired
@@ -40,13 +40,19 @@ public class OrderHystrixController {
         return result;
     }
     @GetMapping("/consumer/payment/hystrix/timeout/{id}")
-    @HystrixCommand(fallbackMethod = "paymentInfo_timeOutHandle",commandProperties = {
-            @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value = "3000")
-    })
+//    @HystrixCommand(fallbackMethod = "paymentInfo_timeOutHandle",commandProperties = {
+//            @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value = "3000")
+//    })
+//    @HystrixCommand
     public String paymentInfo_TimeOut(@PathVariable("id") Integer id){
         String result = paymentHystrixService.paymentInfo_TimeOut(id);
         log.info("*******result:"+result);
         return result;
+    }
+
+    public String paymentInfo_timeOutHandle(){
+
+        return "服务异常  O(∩_∩)O";
     }
 
 }
