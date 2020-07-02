@@ -23,7 +23,17 @@
       <module>cloud-consumer-feign-hystrix-order80</module>
     <module>cloud-consumer-hystrix-dashboard9001</module>
     <module>cloud-gateway-gateway9527</module>
-      <module>cloud-config-center-3344</module>
+    <module>cloud-config-client-3355</module>
+    <module>cloud-config-center-3344</module>
+      <module>cloud-config-client-3366</module>
+      <module>cloud-stream-rabbitmq-provider8801</module>
+      <module>cloud-stream-rabbitmq-consumer8802</module>
+      <module>cloud-stream-rabbitmq-consumer8803</module>
+    <module>cloudailbaba-provider-payment9001</module>
+    <module>cloudailbaba-provider-payment9002</module>
+    <module>cloudailbaba-config-nacos-client3377</module>
+    <module>cloudailbaba-consumer-nacos-order83</module>
+      <module>cloudalibaba-sentinel-service8401</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -59,6 +69,14 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <!--spring cloud alibaba 2.1.0.RELEASE-->
       <dependency>
         <groupId>com.alibaba.cloud</groupId>

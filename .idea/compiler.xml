@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-api-commons" />
+        <module name="cloud-config-client-3355" />
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-consumer-feign-order80" />
         <module name="cloud-consumer-order80" />
@@ -20,10 +21,22 @@
         <module name="cloud-provider-payment8002" />
         <module name="cloud-provider-payment8004" />
         <module name="cloud-providerconsul-payment8006" />
+        <module name="cloudailbabaconfignacosclient3377" />
+        <module name="cloudailbabaconsumernacosorder83" />
+        <module name="cloudailbabaproviderpayment9001" />
+        <module name="cloudailbabaproviderpayment9002" />
+        <module name="cloudalibabasentinelservice8401" />
         <module name="cloudconfigcenter3344" />
+        <module name="cloudconfigclient3366" />
         <module name="cloudconsumerhystrixdashboard9001" />
         <module name="cloudgatewaygateway9527" />
+        <module name="cloudstreamrabbitmqconsumer8802" />
+        <module name="cloudstreamrabbitmqconsumer8803" />
+        <module name="cloudstreamrabbitmqprovider8801" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloudconfigclient3355" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
